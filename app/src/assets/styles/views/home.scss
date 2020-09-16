@@ -1,0 +1,76 @@
+.view-container {
+	@include clearfix();
+
+	.view-header {
+		float: left;
+		width: 100%;
+
+		.title {
+			float: left;
+			width: 100%;
+			color: #4d4d4d;
+			font-size: 26px;
+		}
+	}
+
+	.user-create {
+		float: left;
+		width: 100%;
+		max-width: 40%;
+		clear: right;
+
+		.title {
+			float: left;
+			width: 100%;
+			color: #4d4d4d;
+			font-size: 18px;
+			font-weight: bold;
+		}
+
+		> input {
+			float: left;
+			width: 100%;
+			padding: 8px;
+			margin-bottom: 10px;
+		}
+	}
+
+	.users-list {
+		float: left;
+		width: 100%;
+		margin-top: 25px;
+
+		.title {
+			float: left;
+			width: 100%;
+			color: #4d4d4d;
+			font-size: 18px;
+			font-weight: bold;
+		}
+
+		.user-list {
+			float: left;
+			width: 100%;
+
+			.user-item {
+				float: left;
+				width: 100%;
+
+				.user-item__text {
+					float: left;
+					width: auto;
+					margin: 0;
+					padding: 0;
+				}
+
+				.user-item__button {
+					float: left;
+					width: auto;
+					position: relative;
+					top: -2px;
+					left: 10px;
+				}
+			}
+		}
+	}
+}

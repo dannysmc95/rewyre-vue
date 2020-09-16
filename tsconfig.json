@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"target": "es6",
+		"module": "commonjs",
+		"outDir": "./dist",
+		"declaration": true,
+		"sourceMap": true,
+		"noImplicitAny": false,
+		"noImplicitThis": false,
+		"moduleResolution": "node",
+		"strict": true,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"removeComments": true,
+		"types": ["node"],
+		"typeRoots": [ "node_modules/@types" ]
+	},
+	"exclude": [ "app" ]
+}

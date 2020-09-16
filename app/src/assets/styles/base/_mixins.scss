@@ -1,0 +1,37 @@
+/*====================================================================================
+// Colour the elements placeholder
+// Example: @include placeholder{ // Content };
+====================================================================================*/
+@mixin placeholder {
+	&::-webkit-input-placeholder {@content}
+	&:-moz-placeholder           {@content}
+	&::-moz-placeholder          {@content}
+	&:-ms-input-placeholder      {@content}
+}
+
+/*====================================================================================
+// Create prefixes for example for transitions
+// Example: @include prefix{ transition, all 0.2s ease-in-out };
+====================================================================================*/
+@mixin prefix($property, $value...) {
+	-webkit-#{$property}: $value;
+	-moz-#{$property}: $value;
+	-ms-#{$property}: $value;
+	-o-#{$property}: $value;
+	#{$property}: $value;
+}
+
+/*====================================================================================
+// Clearfix
+// Example: @include clearfix();
+====================================================================================*/
+@mixin clearfix {
+	&:before, &:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+	zoom: 1;
+}
