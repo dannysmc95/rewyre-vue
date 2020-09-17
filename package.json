@@ -24,7 +24,7 @@
   "author": "Danny SMc <danny.smc95@gmail.com> (https://dannysmc.com)",
   "license": "CC-BY-ND-4.0",
   "dependencies": {
-    "rewyre": "^0.3.1"
+    "rewyre": "^0.3.2"
   },
   "devDependencies": {
     "@types/node": "^14.10.3",
