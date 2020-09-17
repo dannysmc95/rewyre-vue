@@ -10,6 +10,7 @@
     "api:watch": "node_modules/.bin/nodemon",
     "app:build": "cd app && npm run build",
     "app:serve": "cd app && npm run serve",
+    "npm:install": "npm install && cd ./app && npm install",
     "start": "NODE_ENV=production node --max_old_space_size=2048 ./dist/application.js",
     "dev": "npm run app:serve & npm run api:watch",
     "build": "npm run clean && npm run app:build && npm run api:build",
@@ -27,7 +28,7 @@
     "rewyre": "^0.3.2"
   },
   "devDependencies": {
-    "@types/node": "^14.10.3",
+    "@types/node": "^14.11.1",
     "@typescript-eslint/eslint-plugin": "^4.1.1",
     "@typescript-eslint/parser": "^4.1.1",
     "eslint": "^7.9.0",
