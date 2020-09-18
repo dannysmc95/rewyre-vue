@@ -40,6 +40,14 @@ _The below will clean the dist folders for both Vue and rewyre._
 _The below will lint the rewyre project only._  
 ```npm run api:lint```
 
+**Install Dependencies**  
+_Due to their being two separate NPM projects in one, you can use the following to install the dependencies for both the Vue3 and rewyre project._  
+```npm run npm:install```
+
+**Base Sync**  
+_This repository is defined as base, if I push updates to here, you can use the following command to get the latest changes and merge them in._  
+```npm run npm:base:sync```
+
 ---
 
 ## Contributions
