@@ -11,6 +11,7 @@
     "app:build": "cd app && npm run build",
     "app:serve": "cd app && npm run serve",
     "npm:install": "npm install && cd ./app && npm install",
+    "npm:rebase": "cd ./app && git remote add upstream git@github.com:dannysmc95/rewyre-vue.git && git fetch upstream && git checkout master && git rebase upstream/master",
     "start": "NODE_ENV=production node --max_old_space_size=2048 ./dist/application.js",
     "dev": "npm run app:serve & npm run api:watch",
     "build": "npm run clean && npm run app:build && npm run api:build",
